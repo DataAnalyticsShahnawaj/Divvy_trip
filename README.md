@@ -55,3 +55,16 @@ Key tasks
 
 1. Identify the business task
 2. Consider key stakeholders
+
+
+## Prepare
+==========
+
+We will use Cyclistic’s historical trip data to analyze and identify trends.
+
+For the purposes of this case study,the dataset is appropriate and will enable us to answer the business questions. 
+
+Data provider : The [data](https://divvy-tripdata.s3.amazonaws.com/index.html) has been made available by Motivate International Inc. under [this
+license](https://ride.divvybikes.com/data-license-agreement).This is public data that you can use to explore how different customer types are using Cyclistic bikes.
+
+But note that data-privacy issues prohibit us from using riders’ personally identifiable information. This means that we won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in theCyclistic service area or if they have purchased multiple single passes.

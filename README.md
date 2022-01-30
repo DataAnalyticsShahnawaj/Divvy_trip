@@ -68,3 +68,15 @@ Data provider : The [data](https://divvy-tripdata.s3.amazonaws.com/index.html) h
 license](https://ride.divvybikes.com/data-license-agreement).This is public data that you can use to explore how different customer types are using Cyclistic bikes.
 
 But note that data-privacy issues prohibit us from using riders’ personally identifiable information. This means that we won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in theCyclistic service area or if they have purchased multiple single passes.
+
+## Process
+==========
+
+1. Download the previous 1 month of Cyclistic trip data.
+2. Unzip the file.
+3. Create a folder on the local disk. Use appropriate file-naming conventions
+(202111-divvy-tripdata).
+4. Open Excel and create a column called “ride_length.” Calculate the length of each ride by subtracting the column “started_at” from the column “ended_at” (for example, =D2-C2) and format as HH:MM:SS using Format > Cells >Time > 37:30:55.
+5. Create a column called “day_of_week,” and calculate the day of the week that each ride started using the “WEEKDAY”command (for example, =WEEKDAY(C2,1)) in each file. Format as General or as a number with no decimals, noting that 1 = Sunday and 7 = Saturday.
+6. Save the Processed data as "processed_data.csv" .
+7. Upload the "processed_data.csv" to drive sothat we can directly use processed_data from any remote place for processding.

@@ -82,5 +82,5 @@ But note that data-privacy issues prohibit us from using riders’ personally id
 6. Remove all the duplicate rows.
 	In excel Click On Data > Remove Duplicates, and then Under Columns, check or uncheck the columns where you want to remove the duplicates.
 7. Filter out the cases where ride length is less than 1 Sec , In this case we remove 33 cases having ride length as 0 Sec. 
-8. Save the Processed data as data_processed.
+8. Save the Processed data as processed_data.
 9. Upload the "processed_data.csv" to drive sothat we can directly use processed_data from any remote place for processding.

@@ -72,11 +72,15 @@ But note that data-privacy issues prohibit us from using riders’ personally id
 ## Process
 ==========
 
+## Process
+==========
 1. Download the previous 1 month of Cyclistic trip data.
-2. Unzip the file.
-3. Create a folder on the local disk. Use appropriate file-naming conventions
-(202111-divvy-tripdata).
+2. Unzip the files.
+3. Create a folder on the desktop or Drive to house the files. Use appropriate file-naming conventions.
 4. Open Excel and create a column called “ride_length.” Calculate the length of each ride by subtracting the column “started_at” from the column “ended_at” (for example, =D2-C2) and format as HH:MM:SS using Format > Cells >Time > 37:30:55.
 5. Create a column called “day_of_week,” and calculate the day of the week that each ride started using the “WEEKDAY”command (for example, =WEEKDAY(C2,1)) in each file. Format as General or as a number with no decimals, noting that 1 = Sunday and 7 = Saturday.
-6. Save the Processed data as "processed_data.csv" .
-7. Upload the "processed_data.csv" to drive sothat we can directly use processed_data from any remote place for processding.
+6. Remove all the duplicate rows.
+	In excel Click On Data > Remove Duplicates, and then Under Columns, check or uncheck the columns where you want to remove the duplicates.
+7. Filter out the cases where ride length is less than 1 Sec , In this case we remove 33 cases having ride length as 0 Sec. 
+8. Save the Processed data as data_processed.
+9. Upload the "processed_data.csv" to drive sothat we can directly use processed_data from any remote place for processding.

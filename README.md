@@ -69,8 +69,6 @@ license](https://ride.divvybikes.com/data-license-agreement).This is public data
 
 But note that data-privacy issues prohibit us from using riders’ personally identifiable information. This means that we won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in theCyclistic service area or if they have purchased multiple single passes.
 
-## Process
-==========
 
 ## Process
 ==========
@@ -84,3 +82,25 @@ But note that data-privacy issues prohibit us from using riders’ personally id
 7. Filter out the cases where ride length is less than 1 Sec , In this case we remove 33 cases having ride length as 0 Sec. 
 8. Save the Processed data as processed_data.
 9. Upload the "processed_data.csv" to drive sothat we can directly use processed_data from any remote place for processding.
+
+## Analyze
+==========
+1. Open the preprocessed_data.csv from the previous Process Stage.
+2. Make a copy of file and name it as analyze_data
+3. Where relevant, making columns consistent .
+4. Clean and transform the data to prepare for analysis.
+5. Conduct descriptive analysis.
+6. Run a few calculations to get a better sense of the data layout. 
+Options:
+	* Calculate the mean of ride_length
+	* Calculate the max ride_length
+	* Calculate the mode of day_of_week
+7. Create a pivot table to quickly calculate and visualize the data. 
+Options:
+	* Calculate the average ride_length for members and casual riders. 
+	Try rows = member_casual; Values = Average of ride_length.
+	* Calculate the average ride_length for users by day_of_week. 
+	Try columns = member_casual; Rows = day_of_week; Values = Average of ride_length.
+	* Calculate the number of rides for users by day_of_week by adding Count of trip_id to Values.
+
+8. Save the file as analyze_data .
